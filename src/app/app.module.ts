@@ -12,6 +12,8 @@ import { BudgetItemCardComponent } from './budget-item-list/budget-item-card/bud
 import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
 
 import { MatDialogModule } from '@angular/material';
+import { AccountsPageComponent } from './accounts-page/accounts-page.component';
+import { AddAccountFormComponent } from './add-account-form/add-account-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MatDialogModule } from '@angular/material';
     AddItemFormComponent,
     BudgetItemListComponent,
     BudgetItemCardComponent,
-    EditItemModalComponent
+    EditItemModalComponent,
+    AccountsPageComponent,
+    AddAccountFormComponent
   ],
   imports: [
     BrowserModule,

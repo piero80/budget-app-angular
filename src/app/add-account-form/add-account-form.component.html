@@ -1,29 +1,30 @@
+<h1 class="title">Add</h1>
 <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
   <div class="field is-horizontal">
     <div class="field-body">
-      <div class="field is-narrow">
-        <p class="control">
-          <input
-            type="number"
-            required
-            name="amount"
-            style="width: 100px;"
-            class="input"
-            placeholder="Amount"
-            [ngModel]="item.amount"
-          />
-        </p>
-      </div>
-
       <div class="field">
         <p class="control">
           <input
             type="text"
             required
-            name="description"
+            name="type"
             class="input"
-            placeholder="Description"
-            [ngModel]="item.description"
+            placeholder="type of group"
+            [ngModel]="item.type"
+          />
+        </p>
+      </div>
+
+      <div class="field is-narrow">
+        <p class="control">
+          <input
+            type="number"
+            required
+            name="group"
+            style="width: 100px;"
+            class="input"
+            placeholder="group"
+            [ngModel]="item.group"
           />
         </p>
       </div>
